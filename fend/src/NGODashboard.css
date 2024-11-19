@@ -1,0 +1,142 @@
+/* NGODashboard.css */
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+
+.dashboard-container header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #333;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.dashboard-container header h1 {
+  margin: 0;
+  color: white;
+}
+
+.dashboard-container nav {
+  margin-left: auto;
+}
+
+.dashboard-container nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.dashboard-container nav ul li {
+  margin-left: 10px;
+}
+
+.dashboard-container nav ul li button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dashboard-container main {
+  padding: 20px;
+  margin-top: 80px;
+  text-align: center;
+}
+
+.dashboard-container .listing-section {
+  margin-bottom: 40px;
+}
+
+.dashboard-container .listing-button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(to right, #0052cc, #007bff);
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-container .listing-button:hover {
+  transform: scale(1.05);
+}
+
+/* Project Listing Section */
+.projects-section {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-tile {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-tile img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-tile h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.donation-chart-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin below the chart */
+  border: #333;
+  border: 10px solid-black;
+}
+
+.donation-details {
+  margin-top: 20px; /* Add margin above the table */
+}
+
+.donation-details table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.donation-details th,
+.donation-details td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.donation-details th {
+  background-color: #f2f2f2;
+}

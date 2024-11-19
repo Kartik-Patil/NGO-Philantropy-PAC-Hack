@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.userDetails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.inputBox {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.inputBox input,
+.inputBox textarea {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.inputBox input:focus,
+.inputBox input:valid,
+.inputBox textarea:focus,
+.inputBox textarea:valid {
+  border-color: #9b59b6;
+}
+
+.inputBox textarea {
+  height: 80px;
+  resize: none;
+}
+
+.button {
+  height: 45px;
+  margin: 35px 0;
+}
+
+.button input {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.button input:hover {
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+}
+
+.successMessage {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #28a745;
+}
+
+.successMessage a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.successMessage a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .inputBox {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  .userDetails {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .userDetails::-webkit-scrollbar {
+    width: 5px;
+  }
+}

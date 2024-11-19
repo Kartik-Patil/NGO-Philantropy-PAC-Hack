@@ -1,0 +1,92 @@
+/* ProjectDetail.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+
+
+.project-details-container {
+    max-width: 1200px;
+    margin: 100px auto 40px;
+    padding: 40px;
+    border-radius: 24px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-content {
+    padding-top: 100px; /* Adjust padding top to create space after header */
+}
+
+.project-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+.project-sections section {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.project-sections section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.4em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #555;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+strong {
+    font-weight: 500;
+}
+
+.project-details-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.delist-button {
+    display: block;
+    width: 100%;
+    padding: 16px 32px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.delist-button:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+    .project-sections {
+        grid-template-columns: 1fr;
+    }
+}

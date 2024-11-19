@@ -1,0 +1,137 @@
+/* NGORegistrationPage.css
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 800px; 
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #4c4c4c;
+  text-align: left;
+}
+
+.content {
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.user-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #4c4c4c;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="url"],
+textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.button {
+  text-align: right;
+  margin-top: 30px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 20px;
+  color: #28a745;
+}
+
+.success-message a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.success-message a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .user-details {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    margin: 20px;
+    padding: 30px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  input[type="submit"] {
+    font-size: 16px;
+    padding: 10px 24px;
+  }
+} */

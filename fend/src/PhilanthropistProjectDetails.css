@@ -1,0 +1,164 @@
+/* PhilanthropistProjectDetails.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    z-index: 1;
+  }
+  
+  .project-details-container {
+    max-width: 800px;
+    margin: 300px auto 40px; /* Adjust the top margin to avoid overlap */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-details-container header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-details-container header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fdfcfc;
+  }
+  
+  .project-detail-content section {
+    margin-bottom: 20px;
+  }
+  
+  .project-detail-content section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #007bff;
+  }
+  
+  .project-detail-content p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .project-detail-content img {
+    max-width: 200px;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .project-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .like-button,
+  .donate-button {
+    /* Common styles for both buttons */
+    padding: 12px 0; /* Adjust vertical padding */
+    width: 150px; /* Fixed width for both buttons */
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .like-button {
+    background-color: transparent;
+    color: #dc3545; /* Red color */
+  }
+  
+  .like-button:hover {
+    background-color: #f725258e; /* Pink color on hover */
+  }
+  
+  .like-button.liked {
+    color: #fff; /* White color when liked */
+    background-color: #dc3545; /* Red background when liked */
+  }
+  
+  .donate-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    text-align: center; /* Center text horizontally */
+    line-height: 1; /* Ensure text is centered vertically */
+    text-decoration: none; /* Remove underline from Link */
+    padding: 12px 16px; /* Adjust padding */
+  }
+  
+  .donate-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-content button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:last-child {
+    background: #6c757d;
+  }
+  
+  

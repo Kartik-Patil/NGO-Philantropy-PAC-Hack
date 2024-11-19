@@ -1,0 +1,110 @@
+/* ProfilePage.css */
+
+.profile-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile {
+  margin-top: 40px;
+}
+
+.profile p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info p {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.profile-info label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-info input[type="text"],
+.profile-info input[type="date"],
+.profile-info input[type="email"],
+.profile-info input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 6px;
+}
+
+.profile-info button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.profile-info button:hover {
+  background-color: #45a049;
+}
+
+.profile-section {
+  margin-bottom: 30px;
+}
+
+.profile-section h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-section p {
+  font-size: 18px;
+  color: #666;
+}
+
+.profile-section input[type="text"],
+.profile-section input[type="date"],
+.profile-section input[type="email"],
+.profile-section input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 6px;
+}
